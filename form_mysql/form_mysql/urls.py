@@ -1,5 +1,5 @@
 """
-URL configuration for bookmyshow project.
+URL configuration for form_mysql project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -19,5 +19,10 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('movie/', include('movie.movie_urls')),
+
+    path('customer/', include('customer_generalform.customer_urls')),
+    path('product/', include('product_modelform.product_urls')),
+    path('employee/', include('employee_djangoform.employee_urls')),
+               
+    
 ]

@@ -1,5 +1,5 @@
 """
-URL configuration for bookmyshow project.
+URL configuration for CRUD project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -19,5 +19,10 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('movie/', include('movie.movie_urls')),
+    
+    path('product/', include( 'product.product_urls')),
+    
+    
+    
+    
 ]
